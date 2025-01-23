@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset = "Utf-8">
+    <meta name="description" content="web design practice">
+    <meta name="viewport" content ="width:device width initial-scale:1.0">
+    <meta name ="keyword" content="making,device">
+    <link rel="stylesheet" href="newproject.css">
+</head>
+<body>
+    <h1 class="future">THE FUTURE OF INVESTING </h1>
+    <div class="diagonal-text">FINANCIAL SCIENCE</div>
+    <div class="container">
+        <div class="sidenav"><a href="#">HOME</a></div>
+        <div class="sidenav"><a href="#">CONTACT</a></div>
+        <div class="sidenav"><a href="#">ABOUT</a></div>
+        <div class="sidenav"><a href="#">REVIEWS</a></div>
+    </div>
+    <div class="box">
+        <div class="column"><a href="#" target="blank">financiality</a></div>
+        <div class="column"><a href="#">financial status</a></div>
+        <div class="column"><a href="#">credit status</a></div>
+        <div class="column"><a href="#">get a quote</a></div>
+    </div>
+    <p class="words">LET US PROVIDE YOU WITH THE BEST BANKING SERVICES THT ARE SEAMLESS AND AFFORDABLE</p>
+    <img class="finance" src="money-management-1568x1045.png" alt="king" width="100" length="100">
+    <p> To proceed please fill the foolwing surbey but first fill your age to determine your eligubility</p>
+    <input id="age" value="18"/>
+    <button onclick="myfunction()">ENTER YOUR AGE TO FIND ELIGIBILTY</button>
+    <p id="demo"></p>
+    <script>
+        function myfunction(){
+            let age = document.getElementById('age').value;
+            let voteable = (age < 18)?"too young to proceed":"old enough to proceed";
+            document.getElementById('demo').innerHTML = voteable;
+        }
+    </script>
+    <p>please choose all of the following that apply!</p>
+    <p>what do you intend to use our platform for?</p>
+    <form>
+        <input type="radio" id="coins" name="money" value="learning">
+        <label for="coins">learning</label><br>
+        <input type="radio" id="money" name="money" value="investing">
+        <label for="money">investing</label>
+    </form>
+    <div class="project">
+    <img class="image" src="C:\Users\RUKN AL BAB\OneDrive\Desktop\New folder (4)\HTML practice\download.jpg " height="100" width="100">
+    <img class="image" src="C:\Users\RUKN AL BAB\OneDrive\Desktop\New folder (4)\HTML practice\money-management-1568x1045.png " width="100" height="100">
+    <img class="image" src="C:\Users\RUKN AL BAB\OneDrive\Desktop\New folder (4)\HTML practice\newimage.jpg" height="100" width="100">
+    </div>
+    
+    <p id ='demo2'></p>
+    <script>
+        const cars = ["BMW", "AUDI", "MASERATI", "TOYOTA", "LAMBORGINI"];
+        let text="";
+        for (let i = 0; i<cars.length; i++){
+            text += cars[i] + "<br>";
+        }
+        document.getElementById('demo2').innerHTML = text;
+    </script>
+    <footer>
+        <p id="time"></p>
+        <script>
+            const d = new Date();
+            document.getElementById('time').innerHTML = d;
+        </script>
+    </footer>
+    <p id="shorty"></p>
+
+    <script>
+        const numbers = [23, 34, 21, 45];
+
+        let khuphe = "";
+        numbers.forEach(myFunction);
+        document.getElementById("shorty").innerHTML = khuphe;
+
+        function myFunction(value, index, array){
+            khuphe += value + "<br>";
+        }
+    </script>
+
+      <div class="digital"></div>  
+      <script type="text/javascript">
+
+    function showTime(){
+       var date = new Date();
+       let h = date.getHours();
+       let m = date.getMinutes();
+       let s = date.getSeconds();
+
+       document.getElementById("digital").innerHTML = date;
+        
+       setTimeout(showTime,1000);
+       
+    }
+    showTime();
+    </script>
+
+
+<p id="hers"></p>
+<script> 
+    const dee = new Date().getHours();
+    let sayo;
+if (dee < 8){
+    sayo = "good afternoon";
+}else {
+    sayo = "good evening";
+}
+document.getElementById('hers').innerHTML = sayo;
+
+</script>
+
+<p id="amor"></p>
+<script>
+    let amor="";
+    let i = new Date().getDay();
+    const daysofweek = ["monday", "tuesday","wednesday","thursday","friday"];
+
+    while(i <= 4){
+    amor += "<br> Today is" +i;
+    i++;
+    }
+    document.getElementById('amor').innerHTML = amor;
+
+</script>
+
+<h6><u>TO GET THE MOST OF OUR FINANCIAL SERVICES PLEASE FILL IN YOUR DETAILS BELOW SO THAT WE MAY CONTACT YOU </u></h6>  
+<p>please enter you credentials below as a way of <br> subscribing to our daily newspaper and explore our ever evolving services!</p>  
+<from>
+<label for="email">enter your email</label><br>
+<input type="text" id="email" name="email"><br>
+<label for="pwd">Password</label><br>
+<input type="password" id="pwd" name="password">
+<input type="button" value="submit" target="blank">
+
+</form>
+
+<input id="years" value="18">
+<button onclick = "myfunction()">FIND ELIGIBILITY</button>
+<p id = "bid"></p>
+
+<script>
+    function myfunction(){
+        let years = document.getElementById('years').value;
+        let vote = (years < 18)? "too early to register!": "it is ok to register!";
+    document.getElementById('bid').innerHTML = vote;
+    }
+
+</script>
+<p id="we3"></p>
+<script>
+    const name = "we3schhols";
+    let text ="";
+    for(const x of name){
+        text += x  + "<br>";
+    }
+    document.getElementById('we3').innerHTML = text;
+</script>
+<p><u><strong>PLEASE DESCRIBE YOURSELF IN NOT LESS THAN 200 WORDS EXCLUDING SPACES</strong></u></p>
+<textarea></textarea>
+<address>Written by<br>Delight Ndlovu<br>Endorsed by <br>Khupe media<br>Street:20 van der  merwi<br>Hillbrow<br>Johannesburg
+</address> 
+<footer class="style">THANK YOU FOR VISITING OUR WEBSITE PLEASE CALL AGAIN</footer>
+</body>
+</html>
